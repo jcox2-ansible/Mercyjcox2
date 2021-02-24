@@ -1,4 +1,3 @@
-
 - hosts: labservers
   become: yes
   tasks:
@@ -11,7 +10,7 @@
        name: httpd
        state: started
        enabled: yes
-  -name: Create index.html file for hosting static content
-   copy:
+  - name: Create index.html file for hosting static content
+    copy:
      content: "Hoorraaayyy!!! My first playbook ran successfully"
      dest: /var/www/html/index.html

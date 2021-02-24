@@ -1,8 +1,12 @@
-
 - hosts: labservers
   become: yes
   tasks:
-  - name: remove httpd package
+  - name: remove firewalld package
+    yum:
+      name: firewalld
+      state: absent
+  - name: remove apache
     yum:
       name: httpd
       state: absent
+

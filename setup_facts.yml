@@ -11,7 +11,7 @@
       recurse: yes
       path: "{{ remote_dir }}"
   - name: INstall the new facts
-  copy:
-    src: "{{ facts_file }}"
-    dest: "{{ remote_dir }}"
+    copy:
+      src: "{{ facts_file }}"
+      dest: "{{ remote_dir }}"
     
