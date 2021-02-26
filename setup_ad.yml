@@ -1,0 +1,6 @@
+- name: install active directory
+  hosts: windows2012
+  gather_facts: false
+  
+  roles:
+    - winad

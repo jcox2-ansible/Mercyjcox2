@@ -1,0 +1,5 @@
+- hosts: windows2012
+  vars_files:
+    - ./ssh_var.yml
+  roles:
+    - win_service_config

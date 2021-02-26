@@ -1,3 +1,14 @@
+
 [labservers]
 ansiblelab2
+
+[windows2012]
+excelluswin1
+
+[windows2012:vars]
+ansible_connection=winrm
+ansible_user=jcox2
+ansible_password=R0ch3st3rNY!
+ansible_winrm_server_cert_validation=ignore
+ansible_become=false
 

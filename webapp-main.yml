@@ -1,0 +1,4 @@
+- hosts: labservers
+  become: yes
+  roles:
+   - db-tier
