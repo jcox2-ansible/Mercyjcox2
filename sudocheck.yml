@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Check for sudo package
+    yum:
+      name: sudo
+      state: present
+
